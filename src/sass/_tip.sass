@@ -1,0 +1,46 @@
+.calculator
+    &__tip
+        margin-top: 30px
+        &__inputs
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            font-size: 22px
+            min-height: 110px
+            &__input
+                flex-basis: 47%
+                background-color: hsl(183, 100%, 15%)
+                color: white
+                text-decoration: none
+                text-align: center
+                border-radius: 5px
+                padding: 5px 0
+                margin-top: 15px
+                transition: .1s
+                &.active
+                    background-color: hsl(172, 67%, 45%)
+                    color: hsl(183, 100%, 15%)
+                &:hover
+                    background-color: hsl(173, 61%, 72%)
+                    color: hsl(183, 100%, 15%)
+                &--custom
+                    width: 47%
+                    background-color: hsl(189, 41%, 97%)
+                    color: hsl(183, 100%, 15%)
+                    padding: 5px 0
+                    font-size: 22px
+                    &:hover
+                        background-color: hsl(189, 41%, 97%)
+                        color: hsl(183, 100%, 15%)
+                &::placeholder
+                    color: hsl(183, 90%, 25%)
+                &:focus-visible
+                    outline: hsl(172, 67%, 45%) auto 1px
+        &__error
+            color: hsl(20, 60%, 54%)
+            text-align: right
+            margin-top: 7px
+            font-size: 12px
+            display: none
+            &--active
+                display: block

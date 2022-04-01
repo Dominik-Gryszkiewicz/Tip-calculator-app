@@ -1,0 +1,10 @@
+export const tipInputs = document.querySelectorAll('.calculator__tip__inputs a');
+export const tipInputCustom = document.querySelector('.calculator__tip__inputs__input--custom');
+export const peopleInput = document.querySelector('.calculator__people__input');
+export const billInput = document.querySelector('.calculator__bill__input');
+export const resetButton = document.querySelector('.calculator__result__btn');
+export const tipAmount = document.querySelector('.calculator__result__amount__number span');
+export const total = document.querySelector('.calculator__result__total__number span');
+export const errorInfo = document.querySelector('.calculator__people__text p+p');
+export const errorTip = document.querySelector('.calculator__tip__error');
+export const errorBill = document.querySelector('.calculator__bill__error');

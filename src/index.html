@@ -9,17 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <title>Tip calculator app</title>
-  <link href="main-9398b23e90295d195c02.css" rel="stylesheet">
 </head>
 <body>
   <main>
     <div class="logo">
-      <img src="./images/logo.svg" alt="logo" class="logo__img">
+      <img src="../../images/logo.svg" alt="logo" class="logo__img">
     </div>
     <div class="calculator">
       <div class="flex-1">
         <div class="calculator__bill">
-          <p class="calculator__bill__text">Bill</p>
+          <div class="calculator__bill__text-container">
+            <p class="calculator__bill__text">Bill</p>
+            <p class="calculator__bill__error">Number is too high</p>
+          </div>
           <input type="number" placeholder="0" class="calculator__bill__input"  onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189 && event.keyCode !== 107 && event.keyCode !== 109">
         </div>
         <div class="calculator__tip">
@@ -71,6 +73,5 @@
       </div>
     </div>
   </main>
-<script type="text/javascript" src="js/main-376ae83012f34163b1aa.js"></script>
 </body>
 </html>

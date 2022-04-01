@@ -1,0 +1,24 @@
+.calculator
+    &__people
+        margin-top: 30px
+        &__text
+            margin-bottom: 5px
+            display: flex
+            justify-content: space-between
+            p + p
+                color: hsl(20, 60%, 54%)
+                display: none
+            p + p.error-info
+                display: block
+        &__input
+            text-align: right
+            background-image: url('../../public/images/icon-person.svg')
+            background-repeat: no-repeat
+            background-position: 10px center
+            color: hsl(183, 100%, 15%)
+            &::placeholder
+                color: hsl(184, 14%, 67%)
+            &:focus-visible
+                outline: hsl(172, 67%, 45%) auto 1px
+        &__input.error-outline
+            outline: hsl(20, 60%, 54%) auto 1px
