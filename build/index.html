@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+<link href="main-d2c2f79cce887346ca2a.css" rel="stylesheet"></head>
+<body>
+  <main>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo" class="logo__img">
+    </div>
+    <div class="calculator">
+      <div class="flex-1">
+        <div class="calculator__bill">
+          <div class="calculator__bill__text-container">
+            <p class="calculator__bill__text">Bill</p>
+            <p class="calculator__bill__error">Number is too high</p>
+          </div>
+          <input type="number" placeholder="0" class="calculator__bill__input"  onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189 && event.keyCode !== 107 && event.keyCode !== 109">
+        </div>
+        <div class="calculator__tip">
+          <p class="calculator__tip__text">Select Tip %</p>
+          <div class="calculator__tip__inputs">
+            <a href="#" class="calculator__tip__inputs__input" data-value="05">5%</a>
+            <a href="#" class="calculator__tip__inputs__input" data-value="10">10%</a>
+            <a href="#" class="calculator__tip__inputs__input" data-value="15">15%</a>
+            <a href="#" class="calculator__tip__inputs__input" data-value="25">25%</a>
+            <a href="#" class="calculator__tip__inputs__input" data-value="50">50%</a>
+            <input type="number" placeholder = "Custom" class="calculator__tip__inputs__input calculator__tip__inputs__input--custom" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189 && event.keyCode !== 107 && event.keyCode !== 109 && event.keyCode !== 190 && event.keyCode !== 188">
+          </div>
+          <p class="calculator__tip__error">Max tip value is 100%</p>
+        </div>
+        <div class="calculator__people">
+          <div class="calculator__people__text">
+            <p>Number of People</p>
+            <p>Can't be zero</p>
+          </div>
+          <input type="number" placeholder="0" class="calculator__people__input" onkeydown="return event.keyCode !== 69 && event.keyCode !== 187 && event.keyCode !== 189 && event.keyCode !== 107 && event.keyCode !== 109 && event.keyCode !== 190 && event.keyCode !== 188">
+        </div>
+      </div>
+      <div class="flex-2">
+        <div class="calculator__result">
+          <div class="flex-indside-1">
+            <div class="calculator__result__amount">
+              <div class="calculator__result__amount__text">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+              </div>
+              <div class="calculator__result__amount__number">
+                <p>$<span>0.00</span></p>
+              </div>
+            </div>
+            <div class="calculator__result__total">
+              <div class="calculator__result__total__text">
+                <p>Total</p>
+                <span>/ person</span>
+              </div>
+              <div class="calculator__result__total__number">
+                <p>$<span>0.00</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-inside-2">
+            <button class="calculator__result__btn">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<script type="text/javascript" src="js/main-eb89eba0f5e3d6dbfb8f.js"></script></body>
+</html>
